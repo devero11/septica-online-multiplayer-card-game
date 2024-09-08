@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="ListedUser" style="flex-grow: 1; height: 10%; max-height: none; min-height: auto; background-color: rgb(176, 138, 138); margin-bottom: 18px; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+        <ui:Label tabindex="-1" text="Username" parse-escape-sequences="true" display-tooltip-when-elided="true" name="username" style="font-size: 89px;" />
+        <ui:Button text="Add Friend" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 75px;" />
+    </ui:VisualElement>
+</ui:UXML>

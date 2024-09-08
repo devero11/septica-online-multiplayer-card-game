@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="User" style="flex-grow: 1; flex-direction: row; justify-content: space-around; max-height: 175px;">
+        <ui:Label tabindex="-1" text="username" parse-escape-sequences="true" display-tooltip-when-elided="true" name="username" style="font-size: 102px;" />
+        <ui:Label tabindex="-1" text="1000" parse-escape-sequences="true" display-tooltip-when-elided="true" name="rank" style="font-size: 101px;" />
+    </ui:VisualElement>
+</ui:UXML>

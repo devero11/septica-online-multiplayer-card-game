@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=5a98d1ead93996f44a88d2e94bae8620&amp;type=3#style" />
+    <ui:VisualElement name="tabContent" style="flex-grow: 1; height: 90%;">
+        <ui:VisualElement name="Home" style="flex-grow: 1; background-color: rgb(159, 125, 125); justify-content: space-around; display: flex;">
+            <ui:VisualElement style="flex-grow: 1; margin-top: 40px; width: 100%;">
+                <ui:Label tabindex="-1" text="Septica" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: auto; align-items: center; -unity-text-align: upper-center; font-size: 177%; flex-direction: row;" />
+                <ui:Label tabindex="-1" text="user:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="username" style="align-self: auto; align-items: center; -unity-text-align: upper-center; font-size: 123%; white-space: normal;" />
+                <ui:Label tabindex="-1" text="rank:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="rank" style="align-self: auto; align-items: center; -unity-text-align: upper-center; font-size: 134px;" />
+                <ui:Label tabindex="-1" text="lvl:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="level" style="align-self: auto; align-items: center; -unity-text-align: upper-center; font-size: 130px;" />
+                <ui:Label tabindex="-1" text="coins:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="coins" style="align-self: auto; align-items: center; -unity-text-align: upper-center; font-size: 110px;" />
+            </ui:VisualElement>
+            <ui:Button text="3 players" parse-escape-sequences="true" display-tooltip-when-elided="true" name="threePlayers" style="justify-content: flex-start; align-items: auto; align-self: auto; width: 100%; height: 11%; font-size: 99px; margin-bottom: 23px;" />
+            <ui:Button text="4 players" parse-escape-sequences="true" display-tooltip-when-elided="true" name="fourPlayers" style="justify-content: flex-start; align-items: auto; align-self: auto; width: 100%; height: 10%; font-size: 99px; margin-bottom: 39px;" />
+            <ui:Button text="teams" parse-escape-sequences="true" display-tooltip-when-elided="true" name="teams" style="justify-content: flex-start; align-items: auto; align-self: auto; width: 100%; height: 11%; font-size: 99px; margin-bottom: 16px;" />
+            <ui:Button text="Lobby" parse-escape-sequences="true" display-tooltip-when-elided="true" name="threeFriends" style="justify-content: flex-start; align-items: auto; align-self: auto; width: 100%; height: 11%; font-size: 100px; margin-top: 19px;" />
+            <ui:Button text="Opponent Left" parse-escape-sequences="true" display-tooltip-when-elided="true" name="playerLeft" style="position: absolute; height: 308px; width: 502px; top: 314px; left: 60px; font-size: 40px; display: none;" />
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Friends" style="flex-grow: 1; background-color: rgb(120, 147, 121); display: none; height: 764px;">
+            <ui:VisualElement name="FriendsTab" style="flex-grow: 1; height: 321px; flex-direction: row; flex-wrap: nowrap; align-items: auto; justify-content: space-around;">
+                <ui:Button text="Friends List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FriendsList" style="width: 50%; height: 100%; font-size: 88px;" />
+                <ui:Button text="Add List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AddFriends" style="width: 50%; height: 100%; font-size: 84px;" />
+            </ui:VisualElement>
+            <ui:ScrollView name="existingFriends" style="display: flex; min-height: auto; height: 100%;">
+                <ui:Label tabindex="-1" text="Pending Invites" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 77px;" />
+                <ui:VisualElement name="pendingList" style="flex-grow: 1;" />
+                <ui:Label tabindex="-1" text="Friends" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 99px;" />
+                <ui:VisualElement name="friendsList" style="flex-grow: 1;" />
+                <ui:Label tabindex="-1" text="Waiting" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 87px;" />
+                <ui:VisualElement name="waitingList" style="flex-grow: 1;" />
+            </ui:ScrollView>
+            <ui:VisualElement name="addFriend" style="flex-grow: 1; height: 100%; background-color: rgb(75, 74, 74); display: none;">
+                <ui:TextField picking-mode="Ignore" label="USERNAME" name="searchUser" is-delayed="false" style="height: 170px; font-size: 58px;" />
+                <ui:VisualElement name="addFriendsList" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="LeaderBoard" style="flex-grow: 1; background-color: rgb(130, 149, 217); display: none;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-around; height: 6px; align-items: stretch; max-height: 180px; min-height: 197px;">
+                <ui:Button text="Global" parse-escape-sequences="true" display-tooltip-when-elided="true" name="global" style="width: 527px; font-size: 66px;" />
+                <ui:Button text="Yours" parse-escape-sequences="true" display-tooltip-when-elided="true" name="yours" style="width: 533px; font-size: 78px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-wrap: nowrap; flex-direction: row; justify-content: space-around; padding-top: 84px; background-color: rgb(212, 155, 155); max-height: 272px; min-height: 265px;">
+                <ui:Label tabindex="-1" text="USERNAME" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 72px;" />
+                <ui:Label tabindex="-1" text="RANK" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 76px;" />
+            </ui:VisualElement>
+            <ui:ScrollView name="leaderboardList" style="max-height: none; height: 100%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Shop" style="flex-grow: 1; background-color: rgb(202, 134, 193); display: none;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="tab" style="flex-grow: 1; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;">
+        <ui:Button text="home" parse-escape-sequences="true" display-tooltip-when-elided="true" name="home" style="width: 210px; font-size: 68px;" />
+        <ui:Button text="friends" parse-escape-sequences="true" display-tooltip-when-elided="true" name="friends" style="width: 275px; font-size: 49px;" />
+        <ui:Button text="leaderboard" parse-escape-sequences="true" display-tooltip-when-elided="true" name="leaderboard" style="width: 262px; font-size: 33px;" />
+        <ui:Button text="shop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="shop" style="border-bottom-right-radius: 0; width: 266px; font-size: 70px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="invitation" style="flex-grow: 1; position: absolute; height: 458px; width: 1177px; top: 149px; left: 11px; flex-direction: row; justify-content: space-around; background-color: rgb(62, 190, 101); align-items: center; display: none;">
+        <ui:Label tabindex="-1" text="username&#10; invited you" parse-escape-sequences="true" display-tooltip-when-elided="true" name="inviteText" style="font-size: 68px;" />
+        <ui:Button text="Decline" parse-escape-sequences="true" display-tooltip-when-elided="true" name="declineInvitation" style="height: 263px; width: 237px; font-size: 69px;" />
+        <ui:Button text="Accept" parse-escape-sequences="true" display-tooltip-when-elided="true" name="acceptInvitation" style="height: 263px; width: 349px; font-size: 69px;" />
+    </ui:VisualElement>
+</ui:UXML>

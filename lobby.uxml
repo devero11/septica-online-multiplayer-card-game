@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(168, 134, 134); justify-content: space-between;">
+        <ui:Label tabindex="-1" text="Joined Friends" parse-escape-sequences="true" display-tooltip-when-elided="true" name="text" style="font-size: 91px;" />
+        <ui:VisualElement name="joined" style="flex-grow: 1; max-height: 883px; height: 1140px;" />
+        <ui:Label tabindex="-1" text="Friends" parse-escape-sequences="true" display-tooltip-when-elided="true" name="text" style="font-size: 108px;" />
+        <ui:ScrollView name="friends" style="height: 100%; align-self: stretch; justify-content: space-between; align-items: stretch; flex-direction: column; flex-wrap: nowrap; flex-shrink: initial; flex-basis: auto; max-height: 100%;" />
+        <ui:VisualElement name="buttons" style="flex-grow: 1; height: 106px; max-height: 375px; align-items: stretch; flex-direction: column; justify-content: space-around; align-self: stretch; min-height: 418px;">
+            <ui:DropdownField label="gamemode" name="gamemode" choices="Three Players, Four Players, Teams" index="0" style="height: 87px; font-size: 57px;" />
+            <ui:Button text="Find Match" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FindMatch" enable-rich-text="true" style="font-size: 71px;" />
+            <ui:Button text="Exit Lobby" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exitButton" style="font-size: 86px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

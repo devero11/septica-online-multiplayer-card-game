@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; margin-top: 25px; margin-right: 24px; margin-bottom: 29px; margin-left: 23px;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; align-items: flex-end; height: -251px; max-height: 20%;">
+            <ui:Button text="||" parse-escape-sequences="true" display-tooltip-when-elided="true" name="pause" style="width: 199px; height: 191px; -unity-font-style: bold; font-size: 90px;" />
+            <ui:Button text="End Turn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndTurn" style="position: absolute; height: 301px; width: 505px; top: 1279px; left: 342px; font-size: 68px; align-items: center; justify-content: center; align-self: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="menu" style="flex-grow: 1; justify-content: center; align-self: auto; align-items: stretch; padding-bottom: 187px; display: none; background-color: rgb(176, 120, 120);">
+            <ui:Button text="Resume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="resume" style="height: 285px; font-size: 104px; margin-bottom: 39px;" />
+            <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="quit" style="height: 394px; font-size: 123px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
