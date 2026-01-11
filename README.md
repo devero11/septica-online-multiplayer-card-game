@@ -1,5 +1,5 @@
 # Șeptică - Online Multiplayer Card Game
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/devero11/septica-online-multiplayer-card-game)
+
 
 This repository contains the Unity client for an online multiplayer version of Șeptică, a popular Romanian trick-taking card game. The project is built using the Unity engine and utilizes the Nakama server for real-time multiplayer functionality, social features, and data management.
 
