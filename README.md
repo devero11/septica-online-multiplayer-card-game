@@ -3,6 +3,10 @@
 
 This repository contains the Unity client for an online multiplayer version of Șeptică, a popular Romanian trick-taking card game. The project is built using the Unity engine and utilizes the Nakama server for real-time multiplayer functionality, social features, and data management.
 
+
+https://github.com/user-attachments/assets/7119f81c-7d78-45b6-a483-c802e384ec90
+
+
 ## Features
 
 - **Real-time Multiplayer Gameplay:** Supports matches for 3 players, 4 players, and teams.
